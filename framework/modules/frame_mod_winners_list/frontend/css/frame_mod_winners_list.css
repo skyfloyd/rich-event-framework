@@ -1,0 +1,11 @@
+.linkMe{
+	color: #03C;
+	cursor: pointer;
+}
+.linkMe:hover{
+	color: #906;
+	cursor: pointer;
+}
+.linkMe_disable{
+	color: #CCC;
+}

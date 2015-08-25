@@ -1,0 +1,80 @@
+	
+.tableStyle1 a:link {
+	color:#d42945;
+	text-decoration:none;
+	border-bottom:1px dotted #ffbac8;
+	}	
+.tableStyle1 a:visited {
+	color:#d42945;
+	border-bottom:none;
+	text-decoration:none;
+	}		
+.tableStyle1 a:hover,
+.tableStyle1 a:focus {
+	color:#f03b58;
+	border-bottom:1px solid #f03b58;
+	text-decoration:none;
+	}
+.tableStyle1 a,
+.tableStyle1 a:link,
+.tableStyle1 a:visited {
+	border:none;
+	}		
+	
+.tableStyle1 {
+	width:100%;
+	border-top:1px solid #e3f1fe;
+	border-right:1px solid #e3f1fe;
+	margin:1em auto;
+		border-collapse:collapse;
+	}
+.tableStyle1 caption {
+	color: #9ba9b4;
+	font-size:.94em;
+	letter-spacing:.1em;
+	padding:0;
+	margin:1em 0 0 0;
+	margin-bottom:0;
+	caption-side:top;
+	text-align:center;
+	}	
+.tableStyle1 tr.odd td,
+.tableStyle1 tr.odd .column1 {
+	background:#f4f9fe url(../img/background.gif) no-repeat;
+	}
+.tableStyle1 td {
+	color:#678197;
+	border-bottom: 1px solid #e3f1fe;
+	border-left:1px solid #e5eff8;
+	padding:.3em 1em;
+	text-align:center;
+	}				
+.tableStyle1 th {
+	font-weight:normal;
+	color: #678197;
+	text-align:left;
+	border-bottom: 1px solid #e3f1fe;
+	border-left:1px solid #e5eff8;
+	padding:.3em 1em;
+	}	
+.tableStyle1 thead th {
+	background:#f4f9fe;
+	text-align:center;
+	font:bold 1.2em/2em "Century Gothic","Trebuchet MS",Arial,Helvetica,sans-serif;
+	color:#66a3d3
+	}				
+.tableStyle1 tfoot th {
+	background:#f4f9fe;
+	text-align:center;
+	}	
+.tableStyle1 tfoot th strong {
+	font:bold 1.2em "Century Gothic","Trebuchet MS",Arial,Helvetica,sans-serif;
+	margin:.5em .5em .5em 0;
+	color:#66a3d3;
+		}		
+.tableStyle1 tfoot th em {
+	color:#f03b58;
+	font-weight: bold;
+	font-size: 1.1em;
+	font-style: normal;
+	}	

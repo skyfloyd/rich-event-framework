@@ -1,0 +1,61 @@
+.linkMe{
+	color: #03C;
+	cursor: pointer;
+}
+.linkMe:hover{
+	color: #906;
+	cursor: pointer;
+}
+	
+	
+.copySweepstake{
+	width: 25px;
+	height: 25px;
+	background: url( ../img/copy.png ) no-repeat;
+	cursor: pointer;
+}
+.copySweepstake:hover{
+	width: 25px;
+	height: 25px;
+	background: url( ../img/copy_hover.png ) no-repeat;
+	cursor: pointer;
+}
+
+.editSweepstake{
+	width: 25px;
+	height: 25px;
+	background: url( ../img/edit.png ) no-repeat;
+	cursor: pointer;
+}
+.editSweepstake:hover{
+	width: 25px;
+	height: 25px;
+	background: url( ../img/edit_hover.png ) no-repeat;
+	cursor: pointer;
+}
+
+.removeSweepstake{
+	width: 25px;
+	height: 25px;
+	background: url( ../img/remove.png ) no-repeat;
+	cursor: pointer;
+}
+.removeSweepstake:hover{
+	width: 25px;
+	height: 25px;
+	background: url( ../img/remove_hover.png ) no-repeat;
+	cursor: pointer;
+}
+
+.newSweepstake{
+	width: 40px;
+	height: 40px;
+	background: url( ../img/new.png ) no-repeat;
+	cursor: pointer;
+}
+.newSweepstake:hover{
+	width: 40px;
+	height: 40px;
+	background: url( ../img/new_hover.png ) no-repeat;
+	cursor: pointer;
+}

@@ -1,0 +1,27 @@
+<table width='90%' align='center'>
+<tr><td style='padding: 10px;'>
+	<table align='right'><tr>
+		<td><div id='frameModSweepstakeList_newSweepstake' class='linkMe' style='padding-right: 20px;' title='create sweepstake' ng-click='eventFunctions.create()'>New Sweepstake</div></td>
+		<td><select id='frameModSweepstakeList_filter' style='width: 200px; height: 40px;' ng-model='v.filterValue' ng-change='eventFunctions.filter()'><option value='all' selected>All</option><option value='active'>Active</option><option value='pre-start'>Pre-Start</option><option value='finish'>Ended</option><select></td>
+	</tr></table>
+</td></tr>
+<tr><td style='padding: 10px;'><div id='frameModSweepstakeList_parentElement'>
+<table class='table table-striped'> 
+	<thead><tr><th>Sweepstake</th><th>Join</th><th>View</th><th>Share</th><th>Invite</th><th width='160px'>Actions</th></tr></thead>
+	<tr ng-repeat='item in listItems'><!-- ng-class='{odd: $odd}'  -->
+		<td><div>{{ item.title }}</div><div><a href='{{ sweepstakeBaseUrl + item.url }}' target='_blank' style='font-size: 12px;'>{{ item.url }}</a></div></td>
+		<td style='vertical-align: middle;'>{{ item.enterSum }}</td>
+		<td style='vertical-align: middle;'>{{ item.viewSum }}</td>
+		<td style='vertical-align: middle;'>{{ item.publishSum }}</td>
+		<td style='vertical-align: middle;'>{{ item.inviteSum }}</td>
+		<td style='vertical-align: middle;'> 
+			<div class="btn-group" style='vertical-align: middle;'>
+			  <button type="button" class="btn btn-default btn-sm" id='{{ _MODULE_ID_ }}_actionClone_{{ item.id }}' title='clone sweepstake' ng-click='eventFunctions.clone(item.id)'>clone</button>
+			  <button type="button" class="btn btn-default btn-sm" id='{{ _MODULE_ID_ }}_actionEdit_{{ item.id }}' title='edit sweepstake' ng-click='eventFunctions.edit(item.id)'>edit</button>
+			  <button type="button" class="btn btn-default btn-sm" id='{{ _MODULE_ID_ }}_actionRemove_{{ item.id }}' title='remove sweepstake' ng-click='eventFunctions.remove(item.id)'>remove</button>
+			</div>
+		</td> 
+	</tr>
+</table>
+</div></td></tr>
+</table>

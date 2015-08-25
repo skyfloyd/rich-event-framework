@@ -1,0 +1,44 @@
+<body>
+<table><tr><td onMouseUp="tdUp();">
+<div id="gago_div" onMouseMove="move('a');" onMouseUp="up('a');" onMouseDown="down('a');" style="width:500px; height:500px; background-color:#99FF33;">
+</div>
+</td></tr></table>
+<div id="gago_div1" onMouseMove="move('a1');" onMouseUp="up('a1');" onMouseDown="down('a1');" style="width:200px; height:200px; background-color:#FFFF66; position:absolute; top:0px; left:0px; border: 5px solid #3300CC;"></div>
+
+<table onMouseDown="alert('table');" onMouseUp="">
+	<tr>
+		<td>aaaaaaaaaaaa
+		</td>
+	</tr>
+	<tr>
+		<td onMouseDown="alert('td');">bbbbbbbbbbbbbbb
+		</td>
+	</tr>
+</table>
+<script>
+var arr = new Array();
+arr["gago"] = "jopa";
+alert(arr["gago"]);
+
+function move( id ){
+//	alert( event.clientX );
+	//alert("move");
+}
+
+function up( id ){
+//	var srcNode = event.srcElement;
+//	alert( event );
+	alert("up" + id);
+	
+}
+
+function down( id ){
+//	alert( event );
+	alert("down" + id);
+}
+
+function tdUp(){
+	alert("tdUp();");
+}
+</script>
+</body>

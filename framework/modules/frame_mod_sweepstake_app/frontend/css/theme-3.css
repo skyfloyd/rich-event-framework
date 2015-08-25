@@ -1,0 +1,21 @@
+h1, h2, h3, h4, h5, h6
+{
+	color:#0ba000;
+	-moz-text-shadow:0 1px 0 #fff;
+	-webkit-text-shadow:0 1px 0 #fff;
+	text-shadow:0 1px 0 #fff;
+}
+
+a
+{
+	color:#0ba000;
+}
+
+a:hover
+{
+	color:#0ba000;
+}
+
+div.button span {
+  background-image: url(../img/uniform/button-3.png);
+}
