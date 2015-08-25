@@ -1,20 +1,8 @@
 <?php
-
-ini_set("log_errors", 1);
-ini_set("error_log", "error.log");
-
 session_start();
 
-$_GET[ "i" ] = 0;
 spl_autoload_register(function ($class) {
-	$_GET[ "i" ]++;
-	
-	if( $_GET[ "i" ] > 15 ){
-		$class = str_replace("\\", "/", $class);
-		var_dump( "<br>", $_GET[ "i" ], "spl_autoload_register", $class, __NAMESPACE__, debug_backtrace() );
-	}
 	require_once __DIR__ . '/' . $class . '.php';
-	
 });
 
 use framework\FrameworkController;
@@ -42,4 +30,3 @@ if( !GlobalHelper::isRequestAjax() ){
 }
 
 echo( $responseForUser );
-?>
